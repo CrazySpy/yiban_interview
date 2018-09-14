@@ -14,8 +14,10 @@ class CreateResultTable extends Migration
     public function up()
     {
         Schema::create('result', function (Blueprint $table) {
-            $table->string('yibanId');
-            $table->string('department');
+			$table->string('yibanId');
+			$table->string('name');
+			$table->integer('department')->unsigned();
+			$table->foreign('department')->references('id')->on('department');
         });
     }
 

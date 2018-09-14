@@ -36,7 +36,8 @@
 	@else
 	    <div>
 		<div>恭喜您，您已经通过本次面试</div>
-		<div id='name'>易班id:{{$detail['yibanId']}}</div>
+		<div id='name'>姓名:{{$detail['name']}}</div>
+		<div id='yibanId'>易班id:{{$detail['yibanId']}}</div>
 		@if(isset($detail['department']))
 		    <div id='department'>部门:{{$detail['department']}}</div>
 		@endif

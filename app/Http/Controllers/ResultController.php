@@ -32,7 +32,6 @@ class ResultController extends Controller
 			$detail['department'] = $department['department'];
 			$detail['message'] = $department['message'];
 		}
-		Session::forget('yibanId');
 		return view('result',['detail' => $detail]);
 	}
 
